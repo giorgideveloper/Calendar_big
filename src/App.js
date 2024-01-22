@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import Mypost from './Mypost';
 import { useState } from 'react';
+import Firebase from './Firebase/Firebase';
 
 function App() {
 	const [post, setPosts] = useState('');
@@ -18,6 +19,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Mypost post={post} />
+			<Firebase />
 		</div>
 	);
 }
